@@ -6,7 +6,7 @@ import { Toaster } from "react-hot-toast";
 import NavBar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import SignUpPage from "./pages/SignUpPage";
-import LoginPage from "./pages/LoginPage";
+import LogInPage from "./pages/LogInPage";
 import ProfilePage from "./pages/ProfilePage";
 
 import { useAuthStore } from "./store/useAuthStore";
@@ -41,7 +41,7 @@ const App = () => {
         />
         <Route
           path="/login"
-          element={!authUser ? <LoginPage /> : <Navigate to="/" />}
+          element={!authUser ? <LogInPage /> : <Navigate to="/" />}
         />
 
         <Route
