@@ -49,11 +49,11 @@ const ChatContainer = () => {
     <div className="flex flex-col h-full w-full">
       <ChatHeader />
 
-      <div className="conversation h-full overflow-y-auto">
+      <div className="conversation h-full">
         {isMessagesLoading ? (
           <Loding />
         ) : (
-          <div className="p-4 h-full overflow-y-auto">
+          <div className="p-4 h-full overflow-y-auto z-[-1]">
             {messages.length > 0 ? (
               messages.map((message) => (
                 <div

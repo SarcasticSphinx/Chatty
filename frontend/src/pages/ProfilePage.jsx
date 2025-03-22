@@ -21,7 +21,7 @@ const ProfilePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-base-100 py-12">
+    <div className="min-h-screen bg-base-100 py-12 z-[-1]">
       <div className="max-w-3xl mx-auto px-4">
         <div className="card bg-base-200 shadow-xl">
           <div className="card-body">
