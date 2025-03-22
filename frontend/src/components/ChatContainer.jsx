@@ -75,13 +75,13 @@ const ChatContainer = () => {
                       />
                     </div>
                   </div>
-                  <div className="chat-header">
+                  <div className="chat-header z-[-1]">
                     <time className="text-xs opacity-50 ml-2 ">
                       {HourAndMinute({ date: new Date(message.createdAt) })}
                     </time>
                   </div>
                   <div
-                    className={`chat-bubble ${
+                    className={`chat-bubble z-[-1] ${
                       sender(message) ? "bg-accent text-base-200" : ""
                     }`}
                   >
