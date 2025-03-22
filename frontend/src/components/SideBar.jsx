@@ -31,7 +31,7 @@ const SideBar = () => {
   return (
     <div className="bg-base-200 p-4 h-full w-fit md:w-1/4">
       <div className="space-y-2">
-        <div className="flex items-center justify-center md:justify-start md:gap-3  p-3 border-b-2 border-base-600">
+        <div className="flex items-center justify-center md:justify-start md:gap-3 md:p-3 py-3 border-b-2 border-base-600">
           <Contact className="size-10 md:size-6" />
           <h1 className="text-2xl font-bold hidden md:block">Contacts</h1>
         </div>
@@ -58,7 +58,7 @@ const SideBar = () => {
           filteredUsers.map((user) => (
             <div
               key={user._id}
-              className="flex items-center md:gap-3 p-3 rounded-lg hover:bg-base-300 cursor-pointer"
+              className="flex items-center md:gap-3 md:p-3 rounded-lg hover:bg-base-300 cursor-pointer"
               onClick={() => setSelectedUser(user)}
             >
               <div className="relative w-10 h-10">
