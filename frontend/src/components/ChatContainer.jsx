@@ -49,7 +49,7 @@ const ChatContainer = () => {
     <div className="flex flex-col h-full w-full">
       <ChatHeader />
 
-      <div className="conversation h-full">
+      <div className="conversation h-full overflow-y-auto">
         {isMessagesLoading ? (
           <Loding />
         ) : (
