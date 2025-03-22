@@ -132,7 +132,7 @@ const NavBar = () => {
             </motion.div>
             <ul
               tabIndex={0}
-              className="dropdown-content menu menu-sm p-2 shadow-lg bg-base-200 rounded-box w-52 z-50"
+              className="dropdown-content menu menu-sm p-2 shadow-lg bg-base-200 rounded-box w-52 z-999"
             >
               <li>
                 <button
@@ -187,7 +187,7 @@ const NavBar = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="lg:hidden absolute top-16 right-4 bg-base-200 shadow-lg p-4 rounded-lg w-48 z-50"
+              className="lg:hidden absolute top-16 right-4 bg-base-200 shadow-lg p-4 rounded-lg w-48 z-999"
               onKeyDown={handleKeyPress}
             >
               <div className="flex flex-col gap-2">
@@ -235,7 +235,7 @@ const NavBar = () => {
                   </motion.div>
                   <ul
                     tabIndex={0}
-                    className="dropdown-content menu menu-sm p-2 shadow-lg bg-base-200 rounded-box w-52 z-50"
+                    className="dropdown-content menu menu-sm p-2 shadow-lg bg-base-200 rounded-box w-52 z-1000"
                   >
                     <li>
                       <button
